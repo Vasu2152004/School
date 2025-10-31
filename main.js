@@ -195,14 +195,37 @@ function initializeHeader() {
   const menuIcon = document.getElementById('menu-icon');
   const closeIcon = document.getElementById('close-icon');
 
-  if (menuBtn && mobileMenu) {
-    menuBtn.addEventListener('click', () => {
+  if (menuBtn && mobileMenu && menuIcon && closeIcon) {
+    menuBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
       const isHidden = mobileMenu.classList.contains('hidden');
       if (isHidden) {
         mobileMenu.classList.remove('hidden');
         menuIcon.classList.add('hidden');
         closeIcon.classList.remove('hidden');
       } else {
+        mobileMenu.classList.add('hidden');
+        menuIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+      }
+    });
+
+    // Close menu when clicking on a link
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+      });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!mobileMenu.classList.contains('hidden') &&
+          !mobileMenu.contains(e.target) &&
+          !menuBtn.contains(e.target)) {
         mobileMenu.classList.add('hidden');
         menuIcon.classList.remove('hidden');
         closeIcon.classList.add('hidden');
