@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunrise Academy - Excellence in Education | Primary to 12th Standard</title>
+  <meta name="description" content="Quality education from Primary to 12th Standard at Sunrise Academy. Modern facilities, experienced faculty, and holistic development for every student." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="min-h-screen bg-background">
+  <!-- Header -->
+  <header class="bg-background shadow-md sticky top-0 z-50" id="header"></header>
+
+  <!-- Hero Slider -->
+  <div id="hero-slider"></div>
+
+  <!-- About Section -->
+  <section class="py-16 bg-gradient-to-b from-background to-secondary/20">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-4xl font-bold text-school-gray mb-6">
+            About Sunrise Academy
+          </h2>
+          <p class="text-lg text-school-gray-light mb-6 leading-relaxed">
+            Established with a vision to provide quality education, Sunrise Academy has been 
+            serving the community for over two decades. We offer comprehensive education from 
+            Primary to 12th Standard, focusing on academic excellence and character development.
+          </p>
+          <p class="text-lg text-school-gray-light mb-8 leading-relaxed">
+            Our mission is to create a nurturing environment where every student can discover 
+            their potential, develop critical thinking skills, and grow into responsible global citizens.
+          </p>
+          <a href="about.html" class="btn btn-primary btn-lg inline-block">
+            Learn More About Us
+          </a>
+        </div>
+        <div class="relative">
+          <img 
+            src="src/assets/students-learning.jpg" 
+            alt="Students Learning" 
+            class="rounded-lg shadow-xl w-full h-auto"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-school-blue/20 to-transparent rounded-lg"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-16 bg-background">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-school-gray mb-4">Why Choose Sunrise Academy?</h2>
+        <p class="text-xl text-school-gray-light max-w-3xl mx-auto">
+          We provide a comprehensive educational experience that prepares students for success in academics and life.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="card">
+          <div class="card-content p-6 text-center">
+            <div class="w-16 h-16 bg-gradient-to-r from-school-blue to-school-orange rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-school-gray mb-3">Quality Education</h3>
+            <p class="text-school-gray-light leading-relaxed">Comprehensive curriculum from Primary to 12th Standard with focus on academic excellence.</p>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="card">
+          <div class="card-content p-6 text-center">
+            <div class="w-16 h-16 bg-gradient-to-r from-school-blue to-school-orange rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-school-gray mb-3">Experienced Faculty</h3>
+            <p class="text-school-gray-light leading-relaxed">Dedicated and qualified teachers committed to nurturing every student's potential.</p>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="card">
+          <div class="card-content p-6 text-center">
+            <div class="w-16 h-16 bg-gradient-to-r from-school-blue to-school-orange rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-school-gray mb-3">Academic Excellence</h3>
+            <p class="text-school-gray-light leading-relaxed">Consistent track record of outstanding results in board examinations and competitions.</p>
+          </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="card">
+          <div class="card-content p-6 text-center">
+            <div class="w-16 h-16 bg-gradient-to-r from-school-blue to-school-orange rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-school-gray mb-3">Modern Curriculum</h3>
+            <p class="text-school-gray-light leading-relaxed">Updated syllabus incorporating latest educational practices and technology integration.</p>
+          </div>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="card">
+          <div class="card-content p-6 text-center">
+            <div class="w-16 h-16 bg-gradient-to-r from-school-blue to-school-orange rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-school-gray mb-3">Holistic Development</h3>
+            <p class="text-school-gray-light leading-relaxed">Focus on character building, values, and overall personality development.</p>
+          </div>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="card">
+          <div class="card-content p-6 text-center">
+            <div class="w-16 h-16 bg-gradient-to-r from-school-blue to-school-orange rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-school-gray mb-3">Future Ready</h3>
+            <p class="text-school-gray-light leading-relaxed">Preparing students for higher education and successful careers in their chosen fields.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Preview -->
+  <section class="py-16 bg-secondary/30">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-school-gray mb-4">Campus Life</h2>
+        <p class="text-xl text-school-gray-light">
+          Explore our vibrant campus and the various activities that make learning enjoyable.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Gallery Item 1 -->
+        <div class="relative group cursor-pointer overflow-hidden rounded-lg shadow-lg">
+          <img 
+            src="src/assets/library.jpg" 
+            alt="Modern Library" 
+            class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <h4 class="text-lg font-semibold">Modern Library</h4>
+            <p class="text-sm text-school-orange-light">Academic</p>
+          </div>
+        </div>
+
+        <!-- Gallery Item 2 -->
+        <div class="relative group cursor-pointer overflow-hidden rounded-lg shadow-lg">
+          <img 
+            src="src/assets/sports.jpg" 
+            alt="Sports Activities" 
+            class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <h4 class="text-lg font-semibold">Sports Activities</h4>
+            <p class="text-sm text-school-orange-light">Sports</p>
+          </div>
+        </div>
+
+        <!-- Gallery Item 3 -->
+        <div class="relative group cursor-pointer overflow-hidden rounded-lg shadow-lg">
+          <img 
+            src="src/assets/science-lab.jpg" 
+            alt="Science Laboratory" 
+            class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <h4 class="text-lg font-semibold">Science Laboratory</h4>
+            <p class="text-sm text-school-orange-light">Academic</p>
+          </div>
+        </div>
+
+        <!-- Gallery Item 4 -->
+        <div class="relative group cursor-pointer overflow-hidden rounded-lg shadow-lg">
+          <img 
+            src="src/assets/students-learning.jpg" 
+            alt="Interactive Learning" 
+            class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <h4 class="text-lg font-semibold">Interactive Learning</h4>
+            <p class="text-sm text-school-orange-light">Academic</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-8">
+        <a href="gallery.html" class="btn btn-outline btn-lg inline-block">
+          View Full Gallery
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-16 bg-background">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-school-gray mb-4">What Our Community Says</h2>
+        <p class="text-xl text-school-gray-light">
+          Hear from parents, students, and alumni about their Sunrise Academy experience.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Testimonial 1 -->
+        <div class="card">
+          <div class="card-content p-6">
+            <p class="text-school-gray-light mb-4 italic leading-relaxed">"Sunrise Academy has been instrumental in my daughter's academic and personal growth. The teachers are caring and dedicated."</p>
+            <div class="border-t pt-4">
+              <h4 class="font-semibold text-school-gray">Sarah Johnson</h4>
+              <p class="text-sm text-school-orange">Parent</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="card">
+          <div class="card-content p-6">
+            <p class="text-school-gray-light mb-4 italic leading-relaxed">"The foundation I received at Sunrise Academy prepared me well for medical school. Grateful for the excellent education."</p>
+            <div class="border-t pt-4">
+              <h4 class="font-semibold text-school-gray">Dr. Michael Chen</h4>
+              <p class="text-sm text-school-orange">Former Student</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="card">
+          <div class="card-content p-6">
+            <p class="text-school-gray-light mb-4 italic leading-relaxed">"The school's focus on holistic development and values has shaped my son into a confident and responsible young man."</p>
+            <div class="border-t pt-4">
+              <h4 class="font-semibold text-school-gray">Priya Sharma</h4>
+              <p class="text-sm text-school-orange">Parent</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 cta-section">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-4">Ready to Join Our School Family?</h2>
+      <p class="text-xl mb-8 max-w-2xl mx-auto">
+        Give your child the best education and a bright future. Admissions are now open for the new academic year.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="contact.html" class="btn btn-primary btn-lg">
+          Apply for Admission
+        </a>
+        <a href="contact.html" class="btn btn-outline btn-lg">
+          Schedule a Visit
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="sunrise-footer">
+    <!-- Top Gradient Bar -->
+    <div class="footer-gradient-bar"></div>
+    
+    <!-- Main Content -->
+    <div class="footer-main">
+      <div class="footer-container">
+        <!-- Column 1: School Branding -->
+        <div class="footer-col footer-brand">
+          <div class="footer-logo">
+            <svg width="48" height="48" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="30" cy="30" r="28" stroke="#2563eb" stroke-width="2" fill="#ffffff"/>
+              <rect x="15" y="25" width="30" height="18" fill="#f97316" rx="2"/>
+              <rect x="18" y="22" width="8" height="6" fill="#2563eb" rx="1"/>
+              <rect x="34" y="22" width="8" height="6" fill="#2563eb" rx="1"/>
+              <path d="M30 12 L35 22 L25 22 Z" fill="#2563eb"/>
+              <text x="30" y="50" text-anchor="middle" font-size="8" fill="#2563eb" font-weight="bold">School</text>
+            </svg>
+          </div>
+          <h3 class="brand-name">Sunrise Academy</h3>
+          <p class="brand-tagline">Excellence in Education</p>
+          <p class="brand-desc">Nurturing young minds with innovative teaching methods.</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col footer-links">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-link-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Information -->
+        <div class="footer-col footer-contact">
+          <h4 class="footer-heading">Contact</h4>
+          <div class="contact-item">
+            <svg class="contact-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#f97316"/>
+            </svg>
+            <span>123 Education Street, Knowledge City</span>
+          </div>
+          <div class="contact-item">
+            <svg class="contact-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="#f97316"/>
+            </svg>
+            <span>+1 (555) 123-4567</span>
+          </div>
+          <div class="contact-item">
+            <svg class="contact-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="#f97316"/>
+            </svg>
+            <span>info@sunriseacademy.edu</span>
+          </div>
+        </div>
+
+        <!-- Column 4: Connect & Working Hours -->
+        <div class="footer-col footer-connect">
+          <h4 class="footer-heading">Connect With Us</h4>
+          <div class="social-icons">
+            <a href="#" class="social-icon" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06C2 17.08 5.66 21.2 10.44 22v-7.02H7.9v-2.92h2.54V9.84c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.46h-1.25c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.92h-2.34V22C18.34 21.2 22 17.08 22 12.06z" fill="#333333"/>
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Twitter/X">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="#333333"/>
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" fill="#333333"/>
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" fill="#333333"/>
+              </svg>
+            </a>
+          </div>
+          <div class="working-hours">
+            <p>Mon - Fri</p>
+            <p>8:00 AM - 3:30 PM</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <span class="copyright">© 2025 Sunrise Academy. All rights reserved.</span>
+        </div>
+      </div>
+      <div class="footer-bottom-content-itemt">
+        <div class="">Developed by <span>APTECH Infoway</span></div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+  </footer>
+  
+  <style>
+    /* CTA Section Styling */
+    .cta-section {
+      background: linear-gradient(135deg, #eaefff 0%, #d6e3ff 100%);
+      color: #1e3a8a;
+    }
+    
+    .cta-section h2 {
+      color: #1e3a8a;
+    }
+    
+    .cta-section p {
+      color: #334155;
+    }
+
+    /* Footer Styling - Matching Image Design */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;600&display=swap');
+
+    .sunrise-footer {
+      font-family: "Poppins", "Inter", system-ui, -apple-system, sans-serif;
+      background: #ffffff;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Top Gradient Bar */
+    .footer-gradient-bar {
+      height: 8px;
+      background: linear-gradient(90deg, #a1c4fd 0%, #fbc2eb 100%);
+      width: 100%;
+    }
+
+    /* Subtle Circular Background Shapes */
+    .sunrise-footer::before {
+      content: "";
+      position: absolute;
+      top: 50px;
+      left: -100px;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(255, 182, 193, 0.08) 20%, transparent 90%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .sunrise-footer::after {
+      content: "";
+      position: absolute;
+      bottom: 100px;
+      right: -80px;
+      width: 250px;
+      height: 250px;
+      background: radial-gradient(circle, rgba(255, 217, 102, 0.08) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    /* Main Content Area */
+    .footer-main {
+      position: relative;
+      z-index: 1;
+      padding: 60px 20px 40px;
+      background: #ffffff url("src/assets/47686058_9169143.png") no-repeat center center;
+      background-size: cover;
+      overflow: hidden;
+    }
+
+    .footer-main::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.92);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .footer-container {
+      position: relative;
+      z-index: 1;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
+    }
+
+    .footer-col {
+      display: flex;
+      flex-direction: column;
+    }
+    .footer-bottom-content-itemt {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.9rem;
+      color: #333333;
+      margin: 0;
+      background: #ffffff;
+      position: relative;
+      z-index: 1;
+    }
+    .footer-bottom-content-itemt span {
+      color: #f97316;
+      font-weight: 500;
+      font-size: 0.9rem;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: 0;
+      vertical-align: baseline;
+      background: transparent;
+    }
+
+
+    /* Column 1: Brand */
+    .footer-brand {
+      gap: 12px;
+    }
+
+    .footer-logo {
+      margin-bottom: 8px;
+      width: 48px;
+      height: 48px;
+      flex-shrink: 0;
+    }
+
+    .footer-logo svg {
+      width: 100%;
+      height: 100%;
+      max-width: 48px;
+      max-height: 48px;
+    }
+
+    .brand-name {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #333333;
+      margin: 0;
+    }
+
+    .brand-tagline {
+      font-size: 0.95rem;
+      color: #666666;
+      font-weight: 400;
+      margin: 0;
+    }
+
+    .brand-desc {
+      font-size: 0.9rem;
+      color: #333333;
+      line-height: 1.6;
+      margin: 8px 0 0;
+    }
+
+    /* Column 2: Quick Links */
+    .footer-links {
+      gap: 16px;
+    }
+
+    .footer-heading {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #333333;
+      margin: 0 0 12px;
+    }
+
+    .footer-link-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-link-list a {
+      color: #333333;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 400;
+      transition: color 0.2s ease;
+    }
+
+    .footer-link-list a:hover {
+      color: #f97316;
+    }
+
+    /* Column 3: Contact */
+    .footer-contact {
+      gap: 16px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+      color: #333333;
+    }
+
+    .contact-icon {
+      flex-shrink: 0;
+      width: 18px;
+      height: 18px;
+      min-width: 18px;
+      min-height: 18px;
+      max-width: 18px;
+      max-height: 18px;
+    }
+
+    /* Column 4: Connect & Hours */
+    .footer-connect {
+      gap: 16px;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .social-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .social-icon:hover {
+      background: #f3f4f6;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .social-icon svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .working-hours {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .working-hours p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: #333333;
+    }
+
+    /* Bottom Bar */
+    .footer-bottom {
+      position: relative;
+      z-index: 1;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      background: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .footer-bottom-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.9rem;
+     
+    }
+
+    .copyright {
+      color: #000000;
+      font-weight: 500;
+    }
+
+    .footer-tagline {
+      color: #f97316;
+      font-weight: 600;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .footer-container {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .footer-main {
+        padding: 40px 20px 30px;
+      }
+
+      .footer-bottom-content {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+      }
+    }
+  </style>
+  
+  
+  
+
+  <script src="main.js"></script>
+  <script>
+    // Initialize homepage-specific content
+    if (typeof initializeHomePage === 'function') {
+      initializeHomePage();
+    }
+  </script>
+</body>
+</html>

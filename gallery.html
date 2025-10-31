@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery - Sunrise Academy</title>
+  <meta name="description" content="Explore our vibrant school community through images that capture the essence of learning and growth at Sunrise Academy." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="min-h-screen bg-background">
+  <!-- Header -->
+  <header class="bg-background shadow-md sticky top-0 z-50" id="header"></header>
+  
+  <!-- Hero Section -->
+  <section class="py-20 bg-gradient-to-r from-school-blue to-school-orange text-white">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-5xl font-bold mb-6">School Gallery</h1>
+      <p class="text-xl max-w-3xl mx-auto leading-relaxed">
+        Explore our vibrant school community through images that capture the essence of learning, 
+        growth, and memorable moments at Sunrise Academy.
+      </p>
+    </div>
+  </section>
+
+  <!-- Filter Buttons -->
+  <section class="py-8 bg-secondary/30">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap justify-center gap-4" id="filter-buttons"></div>
+    </div>
+  </section>
+
+  <!-- Gallery Grid -->
+  <section class="py-16 bg-background">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8" id="gallery-grid"></div>
+
+      <!-- No Results Message -->
+      <div id="no-results" class="hidden text-center py-16">
+        <div class="w-24 h-24 bg-school-blue/10 rounded-full flex items-center justify-center mx-auto mb-6">
+          <svg class="w-12 h-12 text-school-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-semibold text-school-gray mb-2">No images found</h3>
+        <p class="text-school-gray-light">
+          Try selecting a different category to view more images.
+        </p>
+      </div>
+    </div>
+
+    <!-- Image Modal -->
+    <div id="image-modal" class="hidden fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4">
+      <button id="modal-close" class="absolute top-4 right-4 text-white hover:bg-white/20 z-60 p-2 rounded">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <button id="modal-prev" class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white hover:bg-white/20 z-60 p-2 rounded">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+
+      <button id="modal-next" class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white hover:bg-white/20 z-60 p-2 rounded">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+
+      <div class="max-w-4xl max-h-full">
+        <img id="modal-image" src="" alt="" class="max-w-full max-h-full object-contain" />
+      </div>
+
+      <div id="modal-counter" class="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white bg-black/50 px-4 py-2 rounded-full"></div>
+    </div>
+  </section>
+
+  <!-- Statistics Section -->
+  <section class="py-16 bg-gradient-to-r from-school-blue to-school-orange text-white">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div>
+          <div class="text-4xl font-bold mb-2">20+</div>
+          <div class="text-lg">Years of Excellence</div>
+        </div>
+        <div>
+          <div class="text-4xl font-bold mb-2">1200+</div>
+          <div class="text-lg">Active Students</div>
+        </div>
+        <div>
+          <div class="text-4xl font-bold mb-2">50+</div>
+          <div class="text-lg">Dedicated Faculty</div>
+        </div>
+        <div>
+          <div class="text-4xl font-bold mb-2">95%</div>
+          <div class="text-lg">Success Rate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-16 bg-secondary/30">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold text-school-gray mb-6">Want to Be Part of Our Story?</h2>
+      <p class="text-xl text-school-gray-light mb-8 max-w-2xl mx-auto">
+        Join our vibrant school community and create your own memorable moments. 
+        Admissions are now open for the upcoming academic year.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="contact.html" class="btn btn-primary btn-lg">
+          Apply for Admission
+        </a>
+        <a href="contact.html" class="btn btn-outline btn-lg">
+          Schedule Campus Visit
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="edu-footer" id="edu-footer" role="contentinfo" aria-label="School website footer">
+    <style>
+      :root { --footer-bg-start:#e6f3ff; --footer-bg-end:#e8fff3; --footer-accent:#2a7bf6; --footer-accent-2:#13b38b; --footer-text:#1f2a37; --footer-muted:#5b6b7a; --footer-white:#ffffff; --footer-link:#0f62fe; --footer-shadow:0 12px 28px rgba(16,24,40,.12); --footer-radius:18px; --footer-gap:clamp(16px,3vw,28px); --footer-col-w:min(260px,100%) }
+      .edu-footer{ margin:clamp(24px,4vw,40px) auto 0; max-width:1200px; background:linear-gradient(135deg,var(--footer-bg-start),var(--footer-bg-end)); border-radius:var(--footer-radius); box-shadow:var(--footer-shadow); overflow:hidden; color:var(--footer-text); transform:translateY(24px); opacity:0; transition:transform 600ms ease, opacity 600ms ease, box-shadow 300ms ease; will-change:transform,opacity }
+      .edu-footer.is-visible{ transform:translateY(0); opacity:1 }
+      .edu-footer:focus-within,.edu-footer:hover{ box-shadow:0 16px 40px rgba(16,24,40,.16) }
+      @keyframes waveGlow{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+      .edu-footer__inner{ position:relative; padding:clamp(20px,5vw,40px) }
+      .edu-footer__inner::before,.edu-footer__inner::after{ content:""; position:absolute; width:180px; height:180px; border-radius:50%; filter:blur(60px); opacity:.25; pointer-events:none }
+      .edu-footer__inner::before{ background:radial-gradient(circle at center,var(--footer-accent) 0%,transparent 60%); top:-40px; left:-40px }
+      .edu-footer__inner::after{ background:radial-gradient(circle at center,var(--footer-accent-2) 0%,transparent 60%); bottom:-40px; right:-40px }
+      .edu-footer__grid{ display:grid; grid-template-columns:1.2fr 2fr 1.3fr; gap:var(--footer-gap); align-items:start }
+      .edu-footer__brand{ display:grid; grid-template-columns:auto 1fr; gap:14px; align-items:center; min-width:var(--footer-col-w) }
+      .edu-footer__logo{ width:60px; height:60px; border-radius:14px; background:var(--footer-white); display:grid; place-items:center; box-shadow:inset 0 0 0 1px rgba(16,24,40,.06), 0 6px 16px rgba(16,24,40,.08); transition:transform 220ms ease; overflow:hidden }
+      .edu-footer__logo:hover{ transform:scale(1.03) }
+      .edu-footer__logo img{ width:100%; height:100%; object-fit:cover; display:block }
+      .edu-footer__school{ font-weight:700; font-size:clamp(18px,2.2vw,22px); letter-spacing:.3px }
+      .edu-footer__tagline{ margin-top:4px; color:var(--footer-muted); font-size:14px }
+      .edu-footer__links{ display:grid; grid-template-columns:repeat(3,minmax(140px,1fr)); gap:var(--footer-gap); min-width:var(--footer-col-w) }
+      .edu-footer__group-title{ font-weight:700; font-size:14px; text-transform:uppercase; letter-spacing:.08em; color:var(--footer-text); margin-bottom:14px; position:relative; padding-bottom:10px }
+      .edu-footer__group-title::after{ content:""; position:absolute; left:0; bottom:0; width:64px; height:3px; border-radius:3px; background:linear-gradient(90deg,var(--footer-accent),var(--footer-accent-2),var(--footer-accent)); background-size:200% 100%; animation:waveGlow 3s ease-in-out infinite; box-shadow:0 0 10px rgba(19,179,139,.35) }
+      .edu-footer__list{ list-style:none; margin:0; padding:0; display:grid; gap:10px }
+      .edu-footer__link{ color:var(--footer-muted); text-decoration:none; display:inline-flex; align-items:center; gap:8px; transition:color 180ms ease, transform 180ms ease, text-shadow 180ms ease; will-change:transform }
+      .edu-footer__link::before{ content:"›"; color:var(--footer-accent); font-weight:700; opacity:.8; transform:translateY(-1px) }
+      .edu-footer__link:hover,.edu-footer__link:focus{ color:var(--footer-text); transform:translateX(3px); text-shadow:0 0 10px rgba(15,98,254,.25) }
+      .edu-footer__contact{ min-width:var(--footer-col-w) }
+      .edu-footer__contact h4{ margin:0 0 14px 0; font-size:16px }
+      .edu-footer__contact-item{ display:grid; grid-template-columns:22px 1fr; gap:10px; align-items:start; color:var(--footer-muted); margin:8px 0 }
+      .edu-footer__icon{ width:20px; height:20px; color:var(--footer-accent); opacity:.9; transform:translateY(2px) }
+      .edu-footer__socials{ display:flex; gap:12px; margin-top:14px }
+      .edu-footer__social-link{ width:38px; height:38px; border-radius:10px; background:var(--footer-white); display:grid; place-items:center; box-shadow:inset 0 0 0 1px rgba(16,24,40,.06), 0 6px 16px rgba(16,24,40,.08); transition:transform 180ms ease, box-shadow 220ms ease, filter 180ms ease }
+      .edu-footer__social-link:hover,.edu-footer__social-link:focus{ transform:translateY(-2px) scale(1.05); box-shadow:inset 0 0 0 1px rgba(16,24,40,.12), 0 8px 20px rgba(16,24,40,.16); filter:drop-shadow(0 0 8px rgba(26,115,232,.25)) }
+      .edu-footer__social-link svg{ width:18px; height:18px }
+      .edu-footer__bottom{ background:rgba(255,255,255,.65); display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:space-between; padding:12px clamp(16px,3vw,24px); font-size:13px; color:var(--footer-muted); border-top:1px solid rgba(16,24,40,.06) }
+      .edu-footer__bottom a{ color:var(--footer-link); text-decoration:none }
+      .edu-footer__bottom a:hover{ text-decoration:underline }
+      @media (max-width:980px){ .edu-footer__grid{ grid-template-columns:1fr 1fr } .edu-footer__contact{ order:3; grid-column:1 / -1 } }
+      @media (max-width:680px){ .edu-footer__grid{ grid-template-columns:1fr } .edu-footer__links{ grid-template-columns:1fr 1fr } }
+      @media (max-width:480px){ .edu-footer__links{ grid-template-columns:1fr } .edu-footer__bottom{ justify-content:center; text-align:center } }
+      @media (prefers-reduced-motion:reduce){ .edu-footer,.edu-footer__link,.edu-footer__social-link{ transition:none !important; animation:none !important } .edu-footer{ transform:none !important; opacity:1 !important } }
+    </style>
+
+    <div class="edu-footer__inner">
+      <div class="edu-footer__grid" aria-label="Footer content layout">
+        <section class="edu-footer__brand" aria-label="School brand">
+          <a href="/" class="edu-footer__logo" aria-label="School logo">
+            <img src="src/assets/school-logo.png" alt="School Logo" onerror="this.style.display='none'">
+            <svg class="edu-footer__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm0 13.09L5.5 12 12 8.91 18.5 12 12 16.09z"/></svg>
+          </a>
+          <div>
+            <div class="edu-footer__school">Sunrise Academy</div>
+            <div class="edu-footer__tagline">Inspiring learning every day</div>
+          </div>
+        </section>
+
+        <nav class="edu-footer__links" aria-label="Quick links">
+          <div>
+            <h3 class="edu-footer__group-title">School</h3>
+            <ul class="edu-footer__list">
+              <li><a class="edu-footer__link" href="about.html">About Us</a></li>
+              <li><a class="edu-footer__link" href="#vision-mission">Vision &amp; Mission</a></li>
+              <li><a class="edu-footer__link" href="#principal-message">Principal’s Message</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="edu-footer__group-title">Explore</h3>
+            <ul class="edu-footer__list">
+              <li><a class="edu-footer__link" href="#academics">Academics</a></li>
+              <li><a class="edu-footer__link" href="#admissions">Admissions</a></li>
+              <li><a class="edu-footer__link" href="gallery.html">Gallery</a></li>
+              <li><a class="edu-footer__link" href="#events">Events</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="edu-footer__group-title">Connect</h3>
+            <ul class="edu-footer__list">
+              <li><a class="edu-footer__link" href="contact.html">Contact Us</a></li>
+              <li><a class="edu-footer__link" href="#careers">Careers</a></li>
+              <li><a class="edu-footer__link" href="#alumni">Alumni</a></li>
+              <li><a class="edu-footer__link" href="#faqs">FAQs</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <address class="edu-footer__contact" aria-label="Contact information">
+          <h4>Contact</h4>
+          <div class="edu-footer__contact-item"><svg class="edu-footer__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg><div>123 Learning Ave, Knowledge City, Country</div></div>
+          <div class="edu-footer__contact-item"><svg class="edu-footer__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.56.57 1 1 0 011 1V20a1 1 0 01-1 1C10.85 21 3 13.15 3 3a1 1 0 011-1h2.5a1 1 0 011 1 11.36 11.36 0 00.57 3.56 1 1 0 01-.24 1.01l-2.2 2.22z"/></svg><div><a class="edu-footer__link" href="tel:+1234567890">+1 (234) 567-890</a></div></div>
+          <div class="edu-footer__contact-item"><svg class="edu-footer__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12.713L0 6V4l12 6.713L24 4v2l-12 6.713zM0 8l12 6.713L24 8v10H0V8z"/></svg><div><a class="edu-footer__link" href="mailto:info@yourschool.edu">info@yourschool.edu</a></div></div>
+          <div class="edu-footer__socials" aria-label="Social media">
+            <a class="edu-footer__social-link" href="#" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#1877F2" d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06C2 17.08 5.66 21.2 10.44 22v-7.02H7.9v-2.92h2.54V9.84c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.46h-1.25c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.92h-2.34V22C18.34 21.2 22 17.08 22 12.06z"/></svg></a>
+            <a class="edu-footer__social-link" href="#" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#E1306C" d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2a3 3 0 013 3v10a3 3 0 01-3 3H7a3 3 0 01-3-3V7a3 3 0 013-3h10zm-5 3.5A5.5 5.5 0 1111.999 18.5 5.5 5.5 0 0112 7.5zm0 2A3.5 3.5 0 1015.5 13 3.5 3.5 0 0012 9.5zm5.75-2.75a1.25 1.25 0 11-1.25 1.25 1.25 1.25 0 011.25-1.25z"/></svg></a>
+            <a class="edu-footer__social-link" href="#" aria-label="YouTube" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#FF0000" d="M23.5 7.2a4 4 0 00-2.8-2.8C18.9 4 12 4 12 4s-6.9 0-8.7.4A4 4 0 00.5 7.2 41.8 41.8 0 000 12a41.8 41.8 0 00-.5 4.8 4 4 0 002.8 2.8C5.1 20 12 20 12 20s6.9 0 8.7-.4a4 4 0 002.8-2.8A41.8 41.8 0 0024 12a41.8 41.8 0 00-.5-4.8zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg></a>
+          </div>
+        </address>
+      </div>
+    </div>
+
+    <div class="edu-footer__bottom">
+      <div>© <span id="edu-footer-year"></span> Sunrise Academy</div>
+      <div>Designed by <a href="#" rel="author">Your Name</a></div>
+    </div>
+
+    <script>
+      (function(){ const footer=document.getElementById('edu-footer'); const yearEl=document.getElementById('edu-footer-year'); if(yearEl) yearEl.textContent=new Date().getFullYear(); if(!('IntersectionObserver' in window)||!footer){ footer&&footer.classList.add('is-visible'); return;} const io=new IntersectionObserver((entries)=>{ entries.forEach(e=>{ if(e.isIntersecting){ footer.classList.add('is-visible'); io.unobserve(e.target); } }); },{threshold:0.12}); io.observe(footer); })();
+    </script>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    // Initialize gallery page-specific content
+    if (typeof initializeGalleryPage === 'function') {
+      initializeGalleryPage();
+    }
+  </script>
+</body>
+</html>
+
